@@ -17,3 +17,13 @@ services:
       PGADMIN_DEFAULT_PASSWORD: admin
     ports:
       - "8080:80"
+  app:
+    container_name: app
+    image: quiz-app:1.0.0
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      DATABASE_URL: "postgresql://postgres:postgres@localhost:5432/quiz"
+    ports:
+      - 3000:3000

@@ -19,6 +19,8 @@ You can start the app in the docker container
 Or you can start it directly
 `$ npm run start`
 
+The swagger UI is available on localhost:3000/docs
+
 ### PgAdmin
 
 You may also start pgadmin to check data in the database `$ docker-compose up -d pgadmin`. Its ui is available on `localhost:8080`. Default email is `admin@pgadmin.com` and password is `admin`.
